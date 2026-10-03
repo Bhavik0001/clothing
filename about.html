@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | VOGUE VIBE Clothing</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="top-announcement-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="d-none d-md-inline"><i class="bi bi-truck me-1"></i> Complimentary Express Delivery on orders over $75</span>
+      <span class="mx-auto mx-md-0 fw-semibold">🌟 Mid-Season Extravaganza: Up to 50% OFF! Code: <span class="badge bg-warning text-dark">VIBE50</span></span>
+      <div class="d-none d-lg-flex gap-3">
+        <a href="contact.html" class="text-white text-decoration-none"><i class="bi bi-geo-alt me-1"></i> Store Locator</a>
+        <a href="contact.html" class="text-white text-decoration-none"><i class="bi bi-headset me-1"></i> Help Center</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-bag-heart-fill text-danger me-2 fs-2"></i>
+        <div>
+          <span class="brand-logo-text">VOGUE<span class="text-danger">VIBE</span></span>
+          <span class="brand-badge">STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Mobile Header Actions (Visible only on mobile/tablet < 992px) -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button type="button" class="mobile-header-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" title="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-pill-custom cart-count-badge">0</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mens.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="womens.html">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kids.html">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Search Bar with Search Button -->
+        <form class="search-form nav-search-group d-flex my-2 my-lg-0 me-lg-3" role="search">
+          <div class="input-group">
+            <input class="form-control nav-search-input" type="search" placeholder="Search jackets, shirts, dresses..." aria-label="Search">
+            <button class="btn nav-search-btn" type="submit" title="Search Clothing">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Action Buttons: Desktop -->
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <button type="button" class="nav-action-btn" data-bs-toggle="modal" data-bs-target="#wishlistModal" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="badge-pill-custom wishlist-count-badge" id="wishlistCountBadge">0</span>
+          </button>
+
+          <button type="button" class="nav-action-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="badge-pill-custom cart-count-badge">0</span>
+          </button>
+        </div>
+
+        <!-- Action Buttons: Mobile -->
+        <div class="nav-action-mobile-container d-lg-none">
+          <button type="button" class="nav-action-mobile-btn" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+            <i class="bi bi-heart-fill text-danger"></i> Saved Wishlist (<span class="wishlist-count-badge">0</span>)
+          </button>
+          <button type="button" class="nav-action-mobile-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+            <i class="bi bi-bag-fill text-danger"></i> Shopping Bag (<span class="cart-count-badge">0</span>)
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="bg-light py-3 border-bottom">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active text-danger fw-semibold" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- About Hero -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="text-danger fw-bold text-uppercase small letter-spacing-1">Our Heritage & Soul</span>
+          <h1 class="display-5 fw-bold mt-2 mb-4">Fashion Designed To Empower Every Generation</h1>
+          <p class="lead text-secondary mb-3">
+            At <strong>VOGUE VIBE</strong>, we believe fashion is more than what you wear — it is how you express individuality, confidence, and comfort every single day.
+          </p>
+          <p class="text-secondary mb-4">
+            Founded in 2018, we started with a simple belief: clothing for men, women, and children should seamlessly combine runway aesthetics with everyday longevity and ethical manufacturing.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="index.html#featured-products" class="btn btn-danger rounded-pill px-4 py-2 fw-semibold">
+              Explore Our Store <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80" alt="Vogue Vibe Studio" class="img-fluid rounded-4 shadow-lg w-100" style="height: 420px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded-3 shadow border-start border-danger border-4">
+              <h5 class="fw-bold mb-0 text-dark">Designed in London & NYC</h5>
+              <small class="text-muted">Handcrafted with sustainable cotton & silks</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Counters -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box shadow-sm">
+            <div class="stat-counter-number">120K+</div>
+            <h6 class="fw-bold text-dark mb-1">Satisfied Customers</h6>
+            <small class="text-muted">Across 28 global countries</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box shadow-sm">
+            <div class="stat-counter-number">3,500+</div>
+            <h6 class="fw-bold text-dark mb-1">Distinct Outfits</h6>
+            <small class="text-muted">For Men, Women & Kids</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box shadow-sm">
+            <div class="stat-counter-number">99.4%</div>
+            <h6 class="fw-bold text-dark mb-1">Positive Feedback</h6>
+            <small class="text-muted">Customer rating on fit & wear</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box shadow-sm">
+            <div class="stat-counter-number">100%</div>
+            <h6 class="fw-bold text-dark mb-1">Ethical Sourcing</h6>
+            <small class="text-muted">Zero toxic dyes or sweatshops</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Pillars / Values -->
+  <section class="py-5 bg-white" id="sustainability">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-danger fw-bold text-uppercase small">What We Stand For</span>
+        <h2 class="display-6 fw-bold mt-1">Our Core Philosophies</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">Every stitch, seam, and fabric is chosen to respect both the wearer and the planet.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm text-center">
+            <div class="feature-icon-wrapper mx-auto">
+              <i class="bi bi-feather"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Unmatched Comfort</h5>
+            <p class="text-muted small mb-0">Crafted with breathable weaves and ultra-soft organic blends made for all-day ease.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm text-center">
+            <div class="feature-icon-wrapper mx-auto">
+              <i class="bi bi-recycle"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Sustainable Future</h5>
+            <p class="text-muted small mb-0">100% recyclable shipping boxes, fair living wages, and zero-waste fabric initiatives.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm text-center">
+            <div class="feature-icon-wrapper mx-auto">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Inclusive Sizing</h5>
+            <p class="text-muted small mb-0">From newborns and toddler sets to XS through 4XL adult cuts tailored to flatter all silhouettes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm text-center">
+            <div class="feature-icon-wrapper mx-auto">
+              <i class="bi bi-gem"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Artisan Precision</h5>
+            <p class="text-muted small mb-0">Double reinforced stitching, high-density buttons, and luxury detailing in every line.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-danger fw-bold text-uppercase small">The Minds Behind The Thread</span>
+        <h2 class="display-6 fw-bold mt-1">Our Creative Visionaries</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Team Member 1 -->
+        <div class="col-md-4">
+          <div class="team-card text-center p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova" class="rounded-3 mb-3">
+            <h5 class="fw-bold mb-1">Elena Rostova</h5>
+            <p class="text-danger small fw-semibold mb-2">Founder & Creative Director</p>
+            <p class="text-muted small">15+ years heading luxury couture collections in Milan and Paris.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-4">
+          <div class="team-card text-center p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Marcus Thorne" class="rounded-3 mb-3">
+            <h5 class="fw-bold mb-1">Marcus Thorne</h5>
+            <p class="text-danger small fw-semibold mb-2">Head of Menswear & Tailoring</p>
+            <p class="text-muted small">Master artisan championing modern ergonomic suiting and heritage cuts.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-4">
+          <div class="team-card text-center p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Chloe Bennett" class="rounded-3 mb-3">
+            <h5 class="fw-bold mb-1">Chloe Bennett</h5>
+            <p class="text-danger small fw-semibold mb-2">Head of Kids & Baby Fashion</p>
+            <p class="text-muted small">Specialist in pediatric skin-safe textiles, playful prints and durable garments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-bag-heart-fill text-danger fs-3 me-2"></i>
+            <span class="text-white fw-bold fs-4">VOGUE<span class="text-danger">VIBE</span></span>
+          </div>
+          <p class="text-secondary mb-4">
+            Curating high-fashion comfort for the whole family. Bringing modern cuts, ethical craftsmanship, and accessible luxury to your wardrobe.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="mens.html">Men's Apparel</a></li>
+            <li><a href="womens.html">Women's Fashion</a></li>
+            <li><a href="kids.html">Kids & Toddlers</a></li>
+            <li><a href="mens.html">Suits & Blazers</a></li>
+            <li><a href="womens.html">Dresses & Skirts</a></li>
+            <li><a href="kids.html">Newborn Essentials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="contact.html#faq">FAQ & Help</a></li>
+            <li><a href="index.html#featured-products">Latest Drops</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Customer Concierge</h5>
+          <ul class="text-secondary">
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-geo-alt-fill text-danger"></i> 742 Evergreen Fashion Blvd, New York, NY 10001
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-telephone-fill text-danger"></i> +1 (800) 555-VOGUE
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill text-danger"></i> support@voguevibe.com
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock-fill text-danger"></i> Mon - Sat: 9:00 AM - 9:00 PM EST
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 <strong>VOGUE VIBE Clothing Inc.</strong> All rights reserved.
+        </div>
+        <div class="d-flex gap-3 text-secondary fs-4">
+          <i class="bi bi-credit-card-2-front" title="Card Payments"></i>
+          <i class="bi bi-paypal" title="PayPal Accepted"></i>
+          <i class="bi bi-apple" title="Apple Pay"></i>
+          <i class="bi bi-shield-lock" title="SSL Encrypted"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Shopping Bag / Cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel">
+        <i class="bi bi-bag-check me-2 text-danger"></i>Your Shopping Bag (<span class="cart-count-badge">0</span>)
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-direction-column">
+      <div id="cartEmptyState" class="text-center py-5 my-auto w-100">
+        <i class="bi bi-bag-x text-muted display-1"></i>
+        <h5 class="mt-3 fw-bold">Your Bag is Empty</h5>
+        <p class="text-muted small">Explore our collections and add styles you love!</p>
+        <a href="index.html" class="btn btn-danger rounded-pill px-4 mt-2">Start Shopping</a>
+      </div>
+      <div id="offcanvasCartItems" class="w-100"></div>
+    </div>
+    <div id="cartFooter" class="offcanvas-footer p-3 border-top bg-light d-none">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fs-5 fw-bold" id="cartTotalAmount">$0.00</span>
+      </div>
+      <button type="button" class="btn btn-danger w-100 py-2 fw-semibold rounded-pill mb-2" onclick="alert('Proceeding to Checkout! Total: ' + document.getElementById('cartTotalAmount').textContent);">
+        Proceed to Checkout <i class="bi bi-arrow-right ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title fw-bold" id="wishlistModalLabel">
+            <i class="bi bi-heart-fill text-danger me-2"></i>My Saved Wishlist
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <i class="bi bi-heartbreak text-danger display-4 mb-3"></i>
+          <h6 class="fw-bold">Wishlist Managed Live!</h6>
+          <p class="text-muted small mb-0">Browse our collections and click the heart icon on any product to save it here.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-dark rounded-pill px-4 mx-auto" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="notificationToast" class="toast align-items-center border-0 shadow-lg rounded-3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center">
+          <i id="toastIcon" class="bi bi-check-circle-fill text-success me-2"></i>
+          <div>
+            <strong id="toastTitle" class="d-block">Notification</strong>
+            <span id="toastBody" class="small text-muted">Action performed.</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Fixed Bottom Navigation Bar (Visible only on mobile/tablet < 992px) -->
+  <nav class="mobile-bottom-nav d-lg-none" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-house-door"></i>
+      <span>Home</span>
+    </a>
+    <a href="mens.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-person"></i>
+      <span>Men</span>
+    </a>
+    <a href="womens.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-person-heart"></i>
+      <span>Women</span>
+    </a>
+    <a href="kids.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-balloon"></i>
+      <span>Kids</span>
+    </a>
+    <button type="button" class="mobile-bottom-nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-label="Shopping Bag">
+      <i class="bi bi-bag"></i>
+      <span>Bag</span>
+      <span class="nav-badge cart-count-badge">0</span>
+    </button>
+  </nav>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="btn-back-to-top" id="btnBackToTop" title="Scroll to top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

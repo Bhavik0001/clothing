@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOGUE VIBE | Trendsetting Men, Women & Kids Apparel</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="top-announcement-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="d-none d-md-inline"><i class="bi bi-truck me-1"></i> Complimentary Express Delivery on orders over $75</span>
+      <span class="mx-auto mx-md-0 fw-semibold">🌟 Mid-Season Extravaganza: Up to 50% OFF! Code: <span class="badge bg-warning text-dark">VIBE50</span></span>
+      <div class="d-none d-lg-flex gap-3">
+        <a href="contact.html" class="text-white text-decoration-none"><i class="bi bi-geo-alt me-1"></i> Store Locator</a>
+        <a href="contact.html" class="text-white text-decoration-none"><i class="bi bi-headset me-1"></i> Help Center</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-bag-heart-fill text-danger me-2 fs-2"></i>
+        <div>
+          <span class="brand-logo-text">VOGUE<span class="text-danger">VIBE</span></span>
+          <span class="brand-badge">STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Mobile Header Actions (Visible only on mobile/tablet < 992px) -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button type="button" class="mobile-header-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" title="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-pill-custom cart-count-badge">0</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links & Search -->
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mens.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="womens.html">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kids.html">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Search Bar with Search Button -->
+        <form class="search-form nav-search-group d-flex my-2 my-lg-0 me-lg-3" role="search">
+          <div class="input-group">
+            <input class="form-control nav-search-input" type="search" placeholder="Search jackets, shirts, dresses..." aria-label="Search">
+            <button class="btn nav-search-btn" type="submit" title="Search Clothing">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Action Buttons: Desktop (Round Buttons) -->
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <!-- Wishlist Trigger -->
+          <button type="button" class="nav-action-btn" data-bs-toggle="modal" data-bs-target="#wishlistModal" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="badge-pill-custom wishlist-count-badge" id="wishlistCountBadge">0</span>
+          </button>
+
+          <!-- Shopping Cart Trigger (Offcanvas) -->
+          <button type="button" class="nav-action-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="badge-pill-custom cart-count-badge">0</span>
+          </button>
+        </div>
+
+        <!-- Action Buttons: Mobile Dropdown Labeled Buttons -->
+        <div class="nav-action-mobile-container d-lg-none">
+          <button type="button" class="nav-action-mobile-btn" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+            <i class="bi bi-heart-fill text-danger"></i> Saved Wishlist (<span class="wishlist-count-badge">0</span>)
+          </button>
+          <button type="button" class="nav-action-mobile-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+            <i class="bi bi-bag-fill text-danger"></i> Shopping Bag (<span class="cart-count-badge">0</span>)
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3. Hero Carousel Section -->
+  <section class="hero-carousel-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1: Women Collection -->
+        <div class="carousel-item active hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-tagline"><i class="bi bi-stars me-1"></i> New Season 2026</span>
+              <h1 class="hero-title">Elevate Your Everyday Elegance</h1>
+              <p class="hero-desc">Discover handpicked premium fabrics, breathable linen, and timeless couture curated for the modern wardrobe.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="womens.html" class="btn btn-danger btn-lg px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                  Shop Women's <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+                <a href="#featured-products" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill fw-semibold">
+                  Explore Trending
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Men Collection -->
+        <div class="carousel-item hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-tagline"><i class="bi bi-fire me-1"></i> Modern Tailoring</span>
+              <h1 class="hero-title">Refined Cuts For Modern Gentlemen</h1>
+              <p class="hero-desc">Bespoke blazers, crisp Italian collars, and effortless casual classics crafted with precision and poise.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="mens.html" class="btn btn-danger btn-lg px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                  Shop Men's <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+                <a href="#category-showcase" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill fw-semibold">
+                  Browse Categories
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Kids Collection -->
+        <div class="carousel-item hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-tagline"><i class="bi bi-heart-fill me-1"></i> Playful & Pure</span>
+              <h1 class="hero-title">Comfortable Chic For Little Explorers</h1>
+              <p class="hero-desc">100% organic cotton, skin-friendly dyes, and vibrant play-ready outfits designed for growing adventurers.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="kids.html" class="btn btn-danger btn-lg px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                  Shop Kids' <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+                <a href="#featured-products" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill fw-semibold">
+                  View Collections
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-label="Previous"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-label="Next"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. Categories Showcase (Men, Women, Kids) -->
+  <section id="category-showcase" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-danger fw-bold text-uppercase letter-spacing-1 small">Exclusive Curations</span>
+        <h2 class="display-6 fw-bold mt-1">Shop By Category</h2>
+        <p class="text-muted mx-auto" style="max-width: 580px;">Discover the latest silhouettes, must-have layers, and standout statement pieces for every family member.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Men's Card -->
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Men's Fashion">
+            <div class="category-card-overlay">
+              <h3 class="category-name">Men's Collection</h3>
+              <p class="category-count">120+ Premium Styles</p>
+              <a href="mens.html" class="category-link-btn">
+                Explore Men <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Women's Card -->
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Women's Fashion">
+            <div class="category-card-overlay">
+              <h3 class="category-name">Women's Collection</h3>
+              <p class="category-count">240+ Trendy Outfits</p>
+              <a href="womens.html" class="category-link-btn">
+                Explore Women <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kids' Card -->
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80" alt="Kids' Fashion">
+            <div class="category-card-overlay">
+              <h3 class="category-name">Kids' World</h3>
+              <p class="category-count">95+ Fun & Comfy Pieces</p>
+              <a href="kids.html" class="category-link-btn">
+                Explore Kids <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Featured Trending Products with Category Filter & Quantity Selectors -->
+  <section id="featured-products" class="py-5">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="text-danger fw-bold text-uppercase small">Handpicked For You</span>
+          <h2 class="display-6 fw-bold mt-1">Trending Outfits</h2>
+        </div>
+        
+        <!-- Category Filter Tabs -->
+        <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+          <button class="btn btn-dark category-filter-btn rounded-pill px-3 active" data-filter="all">All Styles</button>
+          <button class="btn btn-outline-dark category-filter-btn rounded-pill px-3" data-filter="men">Men</button>
+          <button class="btn btn-outline-dark category-filter-btn rounded-pill px-3" data-filter="women">Women</button>
+          <button class="btn btn-outline-dark category-filter-btn rounded-pill px-3" data-filter="kids">Kids</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row g-4" id="products-section">
+        
+        <!-- Product 1: Men's Tailored Blazer -->
+        <div class="col-6 col-lg-3 col-product" data-category="men">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-sale">HOT -25%</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80" alt="Classic Slim Fit Blazer" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Men's Formal</span>
+              <a href="mens.html" class="product-title" title="Classic Navy Slim Fit Blazer">Classic Navy Slim Fit Blazer</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-count">(48)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$89.99</span>
+                <span class="product-price-old">$119.99</span>
+                <span class="product-discount-label">Save 25%</span>
+              </div>
+              
+              <!-- Quantity Stepper & Add to Cart -->
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Women's Floral Summer Midi Dress -->
+        <div class="col-6 col-lg-3 col-product" data-category="women">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-new">NEW ARRIVAL</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80" alt="Floral Summer Midi Dress" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Women's Dresses</span>
+              <a href="womens.html" class="product-title" title="Floral Breezy Summer Midi Dress">Floral Breezy Summer Midi Dress</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="rating-count">(64)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$54.50</span>
+                <span class="product-price-old">$72.00</span>
+                <span class="product-discount-label">Save 24%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Men's Linen Button Down Shirt -->
+        <div class="col-6 col-lg-3 col-product" data-category="men">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-sale">-30%</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80" alt="Casual Pure Linen Shirt" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Men's Casual</span>
+              <a href="mens.html" class="product-title" title="Pure Linen Casual Shirt">Pure Linen Casual Shirt</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span class="rating-count">(32)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$39.00</span>
+                <span class="product-price-old">$55.00</span>
+                <span class="product-discount-label">Save 30%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Kids' Organic Romper Outfit -->
+        <div class="col-6 col-lg-3 col-product" data-category="kids">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-new">BESTSELLER</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80" alt="Pastel Organic Cotton Romper" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Kids' Infant & Toddler</span>
+              <a href="kids.html" class="product-title" title="Organic Cotton Comfort Romper">Organic Cotton Comfort Romper</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="rating-count">(51)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$26.00</span>
+                <span class="product-price-old">$34.00</span>
+                <span class="product-discount-label">Save 23%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Women's Silk Satin Blouse -->
+        <div class="col-6 col-lg-3 col-product" data-category="women">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-sale">-20%</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=800&q=80" alt="Silk Satin Blouse" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Women's Tops</span>
+              <a href="womens.html" class="product-title" title="Luxe Silk Satin V-Neck Blouse">Luxe Silk Satin V-Neck Blouse</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-count">(37)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$44.00</span>
+                <span class="product-price-old">$55.00</span>
+                <span class="product-discount-label">Save 20%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Men's Vintage Denim Jacket -->
+        <div class="col-6 col-lg-3 col-product" data-category="men">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-new">TRENDING</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80" alt="Vintage Denim Jacket" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Men's Outerwear</span>
+              <a href="mens.html" class="product-title" title="Rugged Vintage Denim Jacket">Rugged Vintage Denim Jacket</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="rating-count">(92)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$68.00</span>
+                <span class="product-price-old">$85.00</span>
+                <span class="product-discount-label">Save 20%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Kids' Striped Crewneck Sweatshirt -->
+        <div class="col-6 col-lg-3 col-product" data-category="kids">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-sale">-15%</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Striped Crewneck" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Kids' Casual</span>
+              <a href="kids.html" class="product-title" title="Striped Cozy Fleece Sweatshirt">Striped Cozy Fleece Sweatshirt</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-count">(29)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$24.00</span>
+                <span class="product-price-old">$29.00</span>
+                <span class="product-discount-label">Save 17%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Women's Tailored Trench Coat -->
+        <div class="col-6 col-lg-3 col-product" data-category="women">
+          <div class="product-card">
+            <div class="product-thumb-wrapper">
+              <span class="product-badge-new">PREMIUM</span>
+              <button class="btn-wishlist" title="Add to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80" alt="Tailored Trench Coat" class="product-thumb">
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">Women's Outerwear</span>
+              <a href="womens.html" class="product-title" title="Double Breasted Parisian Trench">Double Breasted Parisian Trench</a>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="rating-count">(78)</span>
+              </div>
+              <div class="product-price-box">
+                <span class="product-price-current">$115.00</span>
+                <span class="product-price-old">$145.00</span>
+                <span class="product-discount-label">Save 20%</span>
+              </div>
+              
+              <div class="product-actions-box">
+                <div class="qty-stepper-group mb-2">
+                  <button type="button" class="qty-btn qty-decrease" title="Decrease Quantity"><i class="bi bi-dash"></i></button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Product Quantity">
+                  <button type="button" class="qty-btn qty-increase" title="Increase Quantity"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn-add-cart">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Promotional Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="promo-banner p-4 p-md-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge bg-danger mb-3 px-3 py-2 fs-6">Limited Weekend Deal</span>
+            <h2 class="display-5 fw-bold text-white mb-3">Upgrade Your Wardrobe With 30% Off Everything</h2>
+            <p class="lead text-light mb-4">Stock up on premium staples for Men, Women & Kids. Apply coupon voucher at checkout for instant rebate.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="mens.html" class="btn btn-light btn-lg px-4 fw-bold">Shop Men</a>
+              <a href="womens.html" class="btn btn-warning btn-lg px-4 fw-bold">Shop Women</a>
+              <a href="kids.html" class="btn btn-outline-light btn-lg px-4 fw-bold">Shop Kids</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-4 p-md-5">
+              <i class="bi bi-gift-fill text-warning fs-1 mb-2"></i>
+              <h3 class="fw-bold text-white">Use Coupon Code</h3>
+              <div class="bg-white text-dark py-2 px-4 rounded-pill fs-4 fw-bold font-monospace my-3 shadow-sm">
+                FASHION2026
+              </div>
+              <small class="text-white-50">*Valid on all Men, Women and Kids clothing above $50</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Value Propositions / Why Choose Us -->
+  <section class="py-5 bg-light">
+    <div class="container py-3">
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-truck"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Express Worldwide Delivery</h5>
+            <p class="text-muted small mb-0">Free expedited shipping on all member orders exceeding $75.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <h5 class="fw-bold mb-2">30-Day Hassle Free Returns</h5>
+            <p class="text-muted small mb-0">Seamless doorstep pickup and instant refund policy guarantee.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5 class="fw-bold mb-2">100% Certified Authentic</h5>
+            <p class="text-muted small mb-0">Every piece is verified for quality and artisan craftsmanship.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h5 class="fw-bold mb-2">24/7 Dedicated Support</h5>
+            <p class="text-muted small mb-0">Live fashion consultants ready to assist sizing and styling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Testimonials Section -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-danger fw-bold text-uppercase small">Community Love</span>
+        <h2 class="display-6 fw-bold mt-1">What Our Customers Say</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted italic mb-4">"The fit of the men's tailored blazer is immaculate. Feels like bespoke tailoring at high-street prices. Plus, shipping was super fast!"</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Marcus Vance" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold mb-0">Marcus Vance</h6>
+                <small class="text-muted">Verified Buyer &bull; London</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted italic mb-4">"The summer dress quality blew me away. The fabric is breathable and soft. I ordered 2 different sizes with the quantity selector with zero issues!"</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Sophia Chen" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold mb-0">Sophia Chen</h6>
+                <small class="text-muted">Verified Buyer &bull; New York</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted italic mb-4">"Bought rompers and sweaters for my twin boys. The organic cotton is ultra soft, gentle on sensitive skin, and washed brilliantly."</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Liam Henderson" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold mb-0">Liam Henderson</h6>
+                <small class="text-muted">Verified Buyer &bull; Toronto</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Newsletter Section -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <i class="bi bi-envelope-paper-heart text-danger fs-1 mb-2"></i>
+          <h2 class="fw-bold mb-2">Join The Vogue Vibe Club</h2>
+          <p class="text-light-50 mb-4">Subscribe to receive exclusive runway drops, VIP discounts, and style inspirations directly in your inbox.</p>
+          <form class="d-flex flex-column flex-sm-row gap-2 justify-content-center" onsubmit="event.preventDefault(); alert('Thank you for subscribing! Check your inbox for 15% off.');">
+            <input type="email" class="form-control form-control-lg rounded-pill px-4" placeholder="Enter your email address..." required>
+            <button type="submit" class="btn btn-danger btn-lg rounded-pill px-4 fw-semibold text-nowrap">Subscribe</button>
+          </form>
+          <small class="text-white-50 mt-3 d-block">We respect your privacy. Unsubscribe anytime.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-bag-heart-fill text-danger fs-3 me-2"></i>
+            <span class="text-white fw-bold fs-4">VOGUE<span class="text-danger">VIBE</span></span>
+          </div>
+          <p class="text-secondary mb-4">
+            Curating high-fashion comfort for the whole family. Bringing modern cuts, ethical craftsmanship, and accessible luxury to your wardrobe.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="mens.html">Men's Apparel</a></li>
+            <li><a href="womens.html">Women's Fashion</a></li>
+            <li><a href="kids.html">Kids & Toddlers</a></li>
+            <li><a href="mens.html">Suits & Blazers</a></li>
+            <li><a href="womens.html">Dresses & Skirts</a></li>
+            <li><a href="kids.html">Newborn Essentials</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="contact.html#faq">FAQ & Help</a></li>
+            <li><a href="#heroCarousel">Latest Drops</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Info -->
+        <div class="col-lg-4 col-md-6">
+          <h5>Customer Concierge</h5>
+          <ul class="text-secondary">
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-geo-alt-fill text-danger"></i> 742 Evergreen Fashion Blvd, New York, NY 10001
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-telephone-fill text-danger"></i> +1 (800) 555-VOGUE
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill text-danger"></i> support@voguevibe.com
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock-fill text-danger"></i> Mon - Sat: 9:00 AM - 9:00 PM EST
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 <strong>VOGUE VIBE Clothing Inc.</strong> All rights reserved.
+        </div>
+        <div class="d-flex gap-3 text-secondary fs-4">
+          <i class="bi bi-credit-card-2-front" title="Card Payments"></i>
+          <i class="bi bi-paypal" title="PayPal Accepted"></i>
+          <i class="bi bi-apple" title="Apple Pay"></i>
+          <i class="bi bi-shield-lock" title="SSL Encrypted"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Shopping Bag / Cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel">
+        <i class="bi bi-bag-check me-2 text-danger"></i>Your Shopping Bag (<span class="cart-count-badge">0</span>)
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-direction-column">
+      <div id="cartEmptyState" class="text-center py-5 my-auto w-100">
+        <i class="bi bi-bag-x text-muted display-1"></i>
+        <h5 class="mt-3 fw-bold">Your Bag is Empty</h5>
+        <p class="text-muted small">Explore our collections and add styles you love!</p>
+        <button class="btn btn-danger rounded-pill px-4 mt-2" data-bs-dismiss="offcanvas">Start Shopping</button>
+      </div>
+
+      <div id="offcanvasCartItems" class="w-100">
+        <!-- Dynamically rendered by main.js -->
+      </div>
+    </div>
+    <div id="cartFooter" class="offcanvas-footer p-3 border-top bg-light d-none">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fs-5 fw-bold" id="cartTotalAmount">$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3 text-success small">
+        <span>Shipping:</span>
+        <span>FREE</span>
+      </div>
+      <button type="button" class="btn btn-danger w-100 py-2 fw-semibold rounded-pill mb-2" onclick="alert('Proceeding to Checkout! Total: ' + document.getElementById('cartTotalAmount').textContent);">
+        Proceed to Checkout <i class="bi bi-arrow-right ms-1"></i>
+      </button>
+      <button type="button" class="btn btn-outline-secondary w-100 py-1 small rounded-pill" data-bs-dismiss="offcanvas">
+        Continue Shopping
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title fw-bold" id="wishlistModalLabel">
+            <i class="bi bi-heart-fill text-danger me-2"></i>My Saved Wishlist
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <i class="bi bi-heartbreak text-danger display-4 mb-3"></i>
+          <h6 class="fw-bold">Wishlist Managed Live!</h6>
+          <p class="text-muted small mb-0">Click the heart icon on any product card across Men, Women or Kids to bookmark or unbookmark your favorite items in real-time.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-dark rounded-pill px-4 mx-auto" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="notificationToast" class="toast align-items-center border-0 shadow-lg rounded-3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center">
+          <i id="toastIcon" class="bi bi-check-circle-fill text-success me-2"></i>
+          <div>
+            <strong id="toastTitle" class="d-block">Notification</strong>
+            <span id="toastBody" class="small text-muted">Action performed.</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Fixed Bottom Navigation Bar (Visible only on mobile/tablet < 992px) -->
+  <nav class="mobile-bottom-nav d-lg-none" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-bottom-nav-item active">
+      <i class="bi bi-house-door-fill"></i>
+      <span>Home</span>
+    </a>
+    <a href="mens.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-person"></i>
+      <span>Men</span>
+    </a>
+    <a href="womens.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-person-heart"></i>
+      <span>Women</span>
+    </a>
+    <a href="kids.html" class="mobile-bottom-nav-item">
+      <i class="bi bi-balloon"></i>
+      <span>Kids</span>
+    </a>
+    <button type="button" class="mobile-bottom-nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-label="Shopping Bag">
+      <i class="bi bi-bag"></i>
+      <span>Bag</span>
+      <span class="nav-badge cart-count-badge">0</span>
+    </button>
+  </nav>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="btn-back-to-top" id="btnBackToTop" title="Scroll to top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
